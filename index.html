@@ -33,7 +33,21 @@
     align-items: center;
     flex-wrap: wrap;
   }
-  header h1 { font-size: 1.4rem; }
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+ .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+ }
+
+ .logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+ }
   nav ul { list-style: none; display: flex; gap: 1.5rem; flex-wrap: wrap; }
   nav a { color: #fff; text-decoration: none; font-size: 0.95rem; }
   nav a:hover { text-decoration: underline; }
@@ -105,7 +119,10 @@
 <body>
 
 <header>
-  <h1>CAIN Africa</h1>
+  <h1 class="logo">
+    <img src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.cainafrica.org%2F&ved=0CBYQjRxqFwoTCLjgyriSspUDFQAAAAAdAAAAABAL&opi=89978449" alt="CAIN Africa Logo">
+    <span>CAIN Africa</span>
+  </h1>
   <nav>
     <ul>
       <li><a href="#about">About</a></li>
