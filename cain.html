@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAIN Africa | Home</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("https://cowrywise.com/blog/wp-content/uploads/2025/09/COWRYWISE-KIDS-022.jpg") center/cover no-repeat;
+    filter: blur(2px) brightness(0.5);
+    z-index: -1;
+  }
+
+  header {
+    background: rgba(30, 39, 97, 0.85);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  header h1 { font-size: 1.4rem; }
+  nav ul { list-style: none; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+  nav a { color: #fff; text-decoration: none; font-size: 0.95rem; }
+  nav a:hover { text-decoration: underline; }
+
+  main { flex: 1; }
+
+  .hero { padding: 4rem 2rem; text-align: center; }
+  .hero h2 { font-size: 2.2rem; margin-bottom: 0.75rem; text-shadow: 0 2px 6px rgba(0,0,0,0.6); }
+  .hero p { max-width: 650px; margin: 0 auto; }
+
+  .about {
+    padding: 2.5rem 2rem;
+    max-width: 850px;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.35);
+    border-radius: 8px;
+  }
+  .about h2 {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    padding-bottom: 0.5rem;
+  }
+  .about p { margin-bottom: 1rem; }
+
+  footer {
+    background: rgba(30, 39, 97, 0.9);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 768px) {
+    .about { margin: 0 1rem; padding: 1.5rem; }
+    .hero h2 { font-size: 1.8rem; }
+  }
+  @media (max-width: 600px) {
+    header { flex-direction: column; text-align: center; gap: 0.75rem; }
+    nav ul { flex-direction: column; gap: 0.5rem; }
+    .hero { padding: 2.5rem 1rem; }
+    .hero h2 { font-size: 1.5rem; }
+    .about { margin: 0 0.5rem; }
+  }
+  @media (max-width: 400px) {
+    header h1 { font-size: 1.1rem; }
+    .hero h2 { font-size: 1.3rem; }
+    .hero p { font-size: 0.9rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>CAIN Africa</h1>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h2>Empowering Communities Through Digital Skills</h2>
+    <p>We equip students and professionals across Africa with the technology skills they need to thrive in a digital economy.</p>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>CAIN Africa is a community-driven education initiative committed to closing the digital skills gap across the continent. We believe access to technology training should not be limited by geography, income, or prior exposure to computers rather, it should be available to anyone willing to learn.</p>
+    <p>Our programs combine hands-on instruction in digital tools such as Google Workspace, Microsoft Office, and foundational web development with mentorship from experienced educators. Students leave our sessions not just knowing how to use software, but understanding how to apply it to real academic and professional situations: writing reports, managing data, building simple websites, and presenting ideas clearly.</p>
+    <p>Since our founding, we have worked with schools, community centers, and youth programs to deliver structured, practical curricula tailored to beginners. We measure success not by attendance alone, but by whether a student who walked in unable to open a spreadsheet walks out able to build one, analyze it, and explain what it shows.</p>
+    <p>Looking ahead, we are expanding into intermediate and advanced tracks such as covering data analysis, introductory coding, and digital safety so that the skills we teach keep pace with what the job market actually demands.</p>
+  </section>
+</main>
+<footer id="contact">
+    <p>&copy; 2026 CAIN Africa. All rights reserved.</p>
+</footer>
+  
+  </body>
+  </html>
